@@ -23,9 +23,10 @@ class VideoApis {
       return List.generate(
         jsonData.length,
         (index) => VideoQalityUrls(
-          quality: int.parse(
-            (jsonData[index]['quality'] as String?)?.split('p').first ?? '0',
-          ),
+//           quality: int.parse(
+//             (jsonData[index]['quality'] as String?)?.split('p').first ?? '0',
+//           ),
+          quality: 720,
           url: jsonData[index]['url'],
         ),
       );
